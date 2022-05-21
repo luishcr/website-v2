@@ -11,6 +11,8 @@
 
 /*  AJUSTES GLOBALES  */
 
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap");
+
 :root {
   --primary-color: #14274e;
   --secondary-color: #f1f6f9;
@@ -28,7 +30,7 @@ html {
 body {
   min-height: 100vh;
   font-size: 2rem;
-  font-family: Helvetica, sans-serif;
+  font-family: "Azeret Mono", monospace, Helvetica, sans-serif;
 }
 
 a {

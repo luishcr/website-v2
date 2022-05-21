@@ -15,13 +15,6 @@ export default function Header() {
                   className="white-logos"
                   alt="LOGO"
                 />
-                <span>
-                  <img
-                    src="../../images/yellowLogo.png"
-                    className="yellow-logos"
-                    alt="LOGO"
-                  />
-                </span>
               </a>
             </div>
             <button className={styles.nav__toggle} id="nav__toggle">
@@ -36,41 +29,42 @@ export default function Header() {
                 className="white-logos"
                 alt="LOGO"
               />
-              <span>
-                <img
-                  src="../../images/yellowLogo.png"
-                  className="yellow-logos"
-                  alt="LOGO"
-                />
-              </span>
             </a>
           </div>
 
           <ul className={styles.nav__links} id="nav__links">
             <li>
-              <a href="/">
-                <i className="fas fa-home"></i> Sobre mí
-              </a>
-            </li>
-            <li>
               <Link href="/">
                 <a>
-                  <i className="fas fa-book"></i> Blog
+                  <i className="fas fa-home"></i> About me
                 </a>
               </Link>
             </li>
             <li>
               <a
-                href="https://www.luishcr.es/docs/LuisHCR_CV.pdf"
+                href="https://blog.luishcr.es"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
-                <i className="fas fa-file-pdf"></i> CV
+                <i className="fas fa-book"></i> Blog
               </a>
             </li>
             <li>
-              <a href="https://www.luishcr.es/contact">
-                <i className="fas fa-envelope"></i> Contacto
+              <a
+                href="https://www.luishcr.es/docs/LuisHCR_CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fas fa-file-pdf"></i> Resume
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.luishcr.es/contact"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fas fa-envelope"></i> Contact
               </a>
             </li>
           </ul>
@@ -82,7 +76,7 @@ export default function Header() {
             <a
               href="https://www.linkedin.com/in/luishcr"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <i className="fab fa-linkedin"> </i>
             </a>
@@ -91,7 +85,7 @@ export default function Header() {
             <a
               href="https://github.com/LuisHCR"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <i className="fab fa-github-square"> </i>
             </a>
@@ -100,7 +94,7 @@ export default function Header() {
             <a
               href="https://twitter.com/Luishcerre"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <i className="fab fa-twitter-square"> </i>
             </a>
@@ -109,7 +103,7 @@ export default function Header() {
             <a
               href="https://stackoverflow.com/users/15593896/luishcr"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <i className="fab fa-stack-overflow"></i>
             </a>

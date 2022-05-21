@@ -11,13 +11,6 @@ export default function Footer() {
               className="white-logos"
               alt="LOGO"
             />
-            <span>
-              <img
-                src="../../images/yellowLogo.png"
-                className="yellow-logos"
-                alt="LOGO"
-              />
-            </span>
           </a>
         </div>
         <div>

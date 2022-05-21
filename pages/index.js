@@ -17,15 +17,15 @@ export default function Home() {
       </Head>
       <div className={styles.container}>
         <main className={styles.main}>
-          <h2>Sobre mí</h2>
+          <h2>About me</h2>
 
           <p className={styles.description}>
-            Me llamo Luis Cubillos, soy desarrollador de software y actualmente
-            estoy enfocado en mejorar mis habilidades de frontend trabajando en
-            proyectos como freelancer.
+            Hi, my name is Luis Cubillos, I am a self-taught software developer
+            and I am currently learning front-end web development with React and
+            Angular.
           </p>
 
-          <h2>Habilidades</h2>
+          <h2>Skills</h2>
           <div className={styles.skills}>
             <section>
               <h3>HTML5</h3>
@@ -71,9 +71,63 @@ export default function Home() {
               <h3>Github</h3>
               <i className="fab fa-github"></i>
             </section>
+            <section>
+              <h3>Linux</h3>
+              <i className="fab fa-linux"></i>
+            </section>
+            <section>
+              <h3>Windows</h3>
+              <i className="fab fa-windows"></i>
+            </section>
+            <section>
+              <h3>Docker</h3>
+              <i className="fab fa-docker"></i>
+            </section>
+            <section>
+              <h3>Cybersec</h3>
+              <i className="fas fa-file-shield"></i>
+            </section>
           </div>
-          <h2> Proyectos </h2>
-          <div className={styles.projects}></div>
+          <h2> Projects </h2>
+          <div className={styles.projects}>
+            <div className={styles.project__one}>
+              <h3>JavaScript Challenges</h3>
+              <section>
+                <Image
+                  src="/images/project_1_preview.gif"
+                  alt="Project one preview"
+                  width={600}
+                  height={350}
+                />
+                <p>
+                  Built in: <br />
+                  HTML5 <i className="fab fa-html5"></i>
+                  CSS3/SCSS <i className="fab fa-sass"></i>
+                  JavaScript <i className="fab fa-js"></i>
+                  <br />
+                  <a
+                    href="https://luishcr.github.io/javascript-challenges"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hvr-icon-forward hvr-icon3"
+                  >
+                    View Web
+                    <i className="fas fa-angle-right hvr-icon-forward hvr-icon3"></i>
+                  </a>
+                  <br />
+                  <a
+                    href="https://github.com/luishcr/javascript-challenges"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hvr-icon-forward hvr-icon3"
+                  >
+                    View Code
+                    <i className="fas fa-angle-right hvr-icon-forward hvr-icon3"></i>
+                  </a>
+                </p>
+              </section>
+            </div>
+          </div>
         </main>
 
         {/* <footer className={styles.footer}>
