@@ -1,31 +1,4 @@
-/* ESTILOS FOOTER */
-
-.footer__logo {
-  text-align: center;
-
-  a,
-  img,
-  span {
-    border: 0;
-    padding: 0;
-    margin: 0;
-  }
-
-  img {
-    width: 7.7rem;
-    height: 7.7rem;
-  }
-
-  a {
-    position: relative;
-    display: inline-block;
-
-    &:hover {
-      transform: rotate(360deg);
-      transition: transform 1s;
-    }
-  }
-}
+/* FOOTER STYLES */
 
 .footer__background {
   background-color: var(--primary-color);
@@ -33,27 +6,14 @@
   margin: 0 auto;
 }
 
-.footer__list {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
+.footer__navIcons {
+  margin: 2rem 0rem;
+  ul {
+    justify-content: center;
+  }
 
-.footerSocial__item {
-  font-size: 2.5rem;
-  margin: 0 1.5rem;
-  i {
+  ul li svg {
     color: var(--secondary-color);
-    user-select: none;
-
-    &:hover {
-      background-color: var(--dark-color);
-      background-size: contain;
-      color: var(--terciary-color);
-      transition: 500ms;
-    }
   }
 }
 
@@ -62,20 +22,4 @@
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-}
-
-.footer__legal {
-  display: flex;
-  justify-content: center;
-  column-gap: 2rem;
-  a {
-    text-decoration: none;
-    color: var(--secondary-color);
-    font-weight: bold;
-
-    &:hover {
-      color: var(--terciary-color);
-      transition: 300ms;
-    }
-  }
 }

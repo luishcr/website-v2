@@ -1,0 +1,62 @@
+.skills {
+  max-width: 77rem;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  section {
+    margin: 0rem 1.5rem 2rem;
+    text-align: center;
+
+    h3 {
+      font-size: 1.7rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.projects {
+  text-align: center;
+  margin-bottom: 4rem;
+
+  h3 {
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+  }
+
+  .project__one {
+    section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      column-gap: 4rem;
+
+      img {
+        border-radius: 0.5rem;
+      }
+
+      p {
+        line-height: 3rem;
+
+        svg {
+          margin-right: 2rem;
+        }
+
+        a {
+          margin-top: 2rem;
+          text-decoration: none;
+          color: var(--primary-color);
+
+          svg {
+            margin-left: 1.2rem;
+            font-size: 2.5rem;
+          }
+        }
+      }
+
+      @media screen and (max-width: 813px) {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

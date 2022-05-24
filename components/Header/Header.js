@@ -1,6 +1,8 @@
-import NavLinks from "./NavLinks";
-import Link from "next/link";
+import Image from "next/image";
 import styles from "./Header.module.scss";
+import NavMenu from "./NavMenu";
+import NavIcons from "./NavIcons";
+import Logo from "./Logo";
 import { useState } from "react";
 
 export default function Header() {
@@ -8,82 +10,34 @@ export default function Header() {
 
   return (
     <header>
+      {/*  MENU NAVBAR  */}
       <nav className={styles.nav__background}>
         <div className={styles.nav__menu}>
           <div className={styles.nav__mobile}>
-            <div className={styles.nav__mobile_logo}>
-              <a href="/">
-                <img
-                  src="../../images/whiteLogo.png"
-                  className="white-logos"
-                  alt="LOGO"
-                />
-              </a>
-            </div>
-
+            <Logo />
             <button
               onClick={() => setshowNav(!showNav)}
               className={styles.nav__toggle}
-              id="nav__toggle"
             >
-              <img src="../../images/toggle.png" alt="toggle button" />
+              <Image
+                src="/../public/images/toggle.png"
+                alt="toggle button"
+                width={40}
+                height={30}
+              />
             </button>
-            {showNav ? <NavLinks /> : null}
+            {showNav ? <NavMenu /> : null}
           </div>
 
-          <div className={styles.nav__logo}>
-            <a href="/">
-              <img
-                src="../../images/whiteLogo.png"
-                className="white-logos"
-                alt="LOGO"
-              />
-            </a>
-          </div>
-          <NavLinks />
+          <Logo />
+
+          <NavMenu />
         </div>
       </nav>
 
-      {/* SOCIAL NAV ICONS */}
-      <nav className={styles.navSocial__icons}>
-        <ul className={styles.navSocial__list}>
-          <li className={styles.navSocial__item}>
-            <a
-              href="https://www.linkedin.com/in/luishcr"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-linkedin"> </i>
-            </a>
-          </li>
-          <li className={styles.navSocial__item}>
-            <a
-              href="https://github.com/LuisHCR"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-github-square"> </i>
-            </a>
-          </li>
-          <li className={styles.navSocial__item}>
-            <a
-              href="https://twitter.com/Luishcerre"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-twitter-square"> </i>
-            </a>
-          </li>
-          <li className={styles.navSocial__item}>
-            <a
-              href="https://stackoverflow.com/users/15593896/luishcr"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-stack-overflow"></i>
-            </a>
-          </li>
-        </ul>
+      {/*  ICONS NAVBAR  */}
+      <nav className={styles.nav__icons}>
+        <NavIcons />
       </nav>
     </header>
   );
