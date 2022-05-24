@@ -7,12 +7,7 @@ export default function Logo() {
     <div className={styles.logo}>
       <Link href="/">
         <a>
-          <Image
-            src="/../public/images/Logo.png"
-            alt="LOGO"
-            width={55}
-            height={55}
-          />
+          <Image src="/images/Logo.png" alt="LOGO" width={55} height={55} />
         </a>
       </Link>
     </div>
