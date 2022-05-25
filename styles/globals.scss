@@ -9,7 +9,6 @@
 }
 
 /*  AJUSTES GLOBALES  */
-@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap");
 
 :root {
   --primary-color: #14274e;
@@ -18,6 +17,7 @@
   --dark-color: #191919;
   --light-color: #f3ecd3;
   --neutral-color: #9ba4b4;
+  --container-background-color: #ffffff;
 }
 
 html {
@@ -26,9 +26,9 @@ html {
 }
 
 body {
-  min-height: 100vh;
+  font-family: 'Azeret Mono', monospace, Helvetica;
   font-size: 2rem;
-  font-family: "Azeret Mono", Helvetica, sans-serif;
+  background-color: var(--secondary-color);
 }
 
 a {
@@ -36,41 +36,40 @@ a {
 }
 
 .container {
+  background-color: var(--container-background-color);
   max-width: 120rem;
   margin: 2rem auto;
   padding: 1.5rem;
+  border: 0px double var(--dark-color);
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 1px 7px 0px var(--primary-color);
+  -webkit-box-shadow: 0px 1px 7px 0px var(--primary-color);
+  -moz-box-shadow: 0px 1px 7px 0px var(--primary-color);
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
 }
 
 .home {
   h2 {
     color: var(--primary-color);
     text-align: center;
-    margin-top: 6rem;
     margin-bottom: 2rem;
     font-size: 2.5rem;
   }
 
   .description {
-    max-width: 75rem;
+    max-width: 77rem;
     margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 10rem;
     line-height: 3rem;
     text-align: justify;
     color: var(--dark-color);
   }
-}
 
-.boxshadow {
-  -webkit-box-shadow: 0px 1px 7px 0px var(--primary-color);
-  -moz-box-shadow: 0px 1px 7px 0px var(--primary-color);
-  box-shadow: 0px 1px 7px 0px var(--primary-color);
-  background-color: var(--secondary-color);
-}
-
-.boxborder {
-  border-radius: 10px 10px 10px 10px;
-  -moz-border-radius: 10px 10px 10px 10px;
-  -webkit-border-radius: 10px 10px 10px 10px;
-  border: 0px double var(--dark-color);
+  .section {
+    margin-bottom: 10rem;
+  }
 }
 
 .nav__menu_icons {

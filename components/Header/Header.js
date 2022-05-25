@@ -4,6 +4,8 @@ import NavMenu from "./NavMenu";
 import NavIcons from "./NavIcons";
 import Logo from "./Logo";
 import { useState } from "react";
+import { FaBars } from "react-icons/fa";
+import { IconContext } from "react-icons";
 
 export default function Header() {
   const [showNav, setshowNav] = useState(false);
@@ -19,12 +21,9 @@ export default function Header() {
               onClick={() => setshowNav(!showNav)}
               className={styles.nav__toggle}
             >
-              <Image
-                src="/../public/images/toggle.png"
-                alt="toggle button"
-                width={40}
-                height={30}
-              />
+              <IconContext.Provider value={{ className: "nav__menu_icons" }}>
+                <FaBars />
+              </IconContext.Provider>
             </button>
             {showNav ? <NavMenu /> : null}
           </div>

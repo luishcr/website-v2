@@ -105,6 +105,10 @@
   border: none;
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  svg {
+    color: var(--secondary-color);
+    font-size: 3.5rem;
+  }
 }
 
 /*  ICONS NAVBAR  */
