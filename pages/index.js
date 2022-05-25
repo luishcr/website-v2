@@ -1,16 +1,9 @@
-import Head from "next/head";
 import Skills from "../components/Main/Skills";
 import Projects from "../components/Main/Projects";
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>💻 luishcr</title>
-        <meta name="description" content="next app" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <div className="home">
         <section className="description">
           <h2>About me</h2>
