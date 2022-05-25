@@ -19,7 +19,6 @@ export default function NavMenu() {
       <li>
         <a
           href="https://blog.luishcr.es"
-          target="_blank"
           rel="noopener noreferrer"
         >
           <IconContext.Provider value={{ className: "nav__menu_icons" }}>
@@ -42,7 +41,6 @@ export default function NavMenu() {
       <li>
         <a
           href="https://www.luishcr.es/contact"
-          target="_blank"
           rel="noopener noreferrer"
         >
           <IconContext.Provider value={{ className: "nav__menu_icons" }}>
