@@ -27,14 +27,17 @@ export default function NavMenu() {
           </IconContext.Provider>
         </a>
       </li>
+     
       <li>
-        <Link href="/docs/resume.pdf">
-          <a download target="_blank" rel="noopener noreferrer">
-            <IconContext.Provider value={{ className: "nav__menu_icons" }}>
+        <a
+          href="https://www.luishcr.es/docs/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+         <IconContext.Provider value={{ className: "nav__menu_icons" }}>
               <FaRegFilePdf /> Resume
             </IconContext.Provider>
-          </a>
-        </Link>
+        </a>
       </li>
       <li>
         <a
