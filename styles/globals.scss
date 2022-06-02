@@ -1,6 +1,5 @@
 // @import url("https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap");
 
-
 /*  RESET  */
 *,
 *:before,
@@ -29,7 +28,7 @@ html {
 }
 
 body {
-  font-family: 'Azeret Mono', monospace, Helvetica;
+  font-family: "Azeret Mono", monospace, Helvetica;
   font-size: 2rem;
   background-color: var(--secondary-color);
 }
@@ -96,6 +95,17 @@ a {
 .main__skills_icons {
   color: var(--primary-color);
   font-size: 3rem;
+}
+
+.formInputHidden {
+  display: none;
+}
+
+.success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
 }
 
 /* EFECTOS HOVER CSS*/
