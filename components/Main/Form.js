@@ -35,7 +35,7 @@ export default function Form() {
       </div>
 
       <div className="formInputHidden">
-        <label> Don't fill this out if you're human</label>
+        <label> Do not fill this out if you are human</label>
         <input type="text" name="bot-field" />
       </div>
 
