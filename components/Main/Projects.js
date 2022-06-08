@@ -19,7 +19,7 @@ export default function Projects() {
           <h3>To-do App</h3>
           <section>
             <Image
-              src="/images/todo-app_preview.gif"
+              src="/images/project_2_preview.png"
               alt="Project two preview"
               width={600}
               height={370}
@@ -61,10 +61,10 @@ export default function Projects() {
           </section>
         </div>
         <div className={styles.project__one}>
-          <h3>JavaScript Challenges</h3>
+          <h3>JavaScript Challenges from Platzi and HackerRank</h3>
           <section>
             <Image
-              src="/images/project_1_preview.gif"
+              src="/images/project_1_preview.png"
               alt="Project one preview"
               width={600}
               height={370}

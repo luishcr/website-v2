@@ -13,6 +13,20 @@ export default function NavIcons() {
     <ul className={styles.nav__icons_list}>
       <li>
         <a
+          href="https://luishcr.es"
+          className="hvr-icon-down"
+          rel="noopener noreferrer"
+        >
+          Español
+          <IconContext.Provider
+            value={{ className: "nav__icons_icon hvr-icon-down hvr-icon2" }}
+          >
+            <FaAngleDown />
+          </IconContext.Provider>
+        </a>
+      </li>
+      <li>
+        <a
           href="https://www.linkedin.com/in/luishcr"
           target="_blank"
           rel="noopener noreferrer"
