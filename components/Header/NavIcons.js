@@ -38,7 +38,7 @@ export default function NavIcons() {
       </li>
       <li>
         <a
-          href="https://github.com/LuisHCR"
+          href="https://github.com/luishcr"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -49,7 +49,7 @@ export default function NavIcons() {
       </li>
       <li>
         <a
-          href="https://twitter.com/Luishcerre"
+          href="https://twitter.com/luishcrDev"
           target="_blank"
           rel="noopener noreferrer"
         >
