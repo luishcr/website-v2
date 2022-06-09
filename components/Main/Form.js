@@ -11,7 +11,7 @@ export default function Form() {
       action="/success"
     >
       <input type="hidden" name="form-name" value="contact-luishcr" />
-      <p> Please fill the form.</p>
+      <p> Form</p>
       <div className={styles.FormCamp}>
         <label htmlFor="name">Name:</label>
         <input

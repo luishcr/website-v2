@@ -13,7 +13,9 @@ import { IconContext } from "react-icons";
 export default function Projects() {
   return (
     <section className="section" id="projects">
-      <h2> Projects </h2>
+      <h2>
+        <FaAngleRight /> ls /projects{" "}
+      </h2>
       <div className={styles.projects}>
         <div className={styles.project__two}>
           <h3>To-do App</h3>

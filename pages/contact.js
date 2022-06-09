@@ -1,11 +1,14 @@
 import Form from "../components/Main/Form";
+import { FaAngleRight } from "react-icons/fa";
 
 export default function Contact() {
   return (
     <>
       <div className="home">
         <section className="description">
-          <h2>Contact</h2>
+          <h2>
+            <FaAngleRight /> contact
+          </h2>
 
           <Form />
         </section>
