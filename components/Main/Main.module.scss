@@ -15,7 +15,10 @@
   }
 }
 
-.projects {
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
   text-align: center;
   margin-bottom: 4rem;
 
@@ -24,26 +27,36 @@
     margin-bottom: 2rem;
   }
 
-  .project__one,
-  .project__two {
-    section {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      column-gap: 4rem;
-      margin-bottom: 10rem;
+  .project {
+    border: 0.4rem var(--neutral-color) solid;
+    border-radius: 1rem;
+    padding: 2rem;
 
+    section {
       img {
         border-radius: 0.5rem;
       }
 
-      p {
-        line-height: 3rem;
-
-        svg {
-          margin-right: 2rem;
+      .project__description {
+        margin-top: 1.5rem;
+        p {
+          margin-bottom: 1.5rem;
+          line-height: 2rem;
         }
+        span {
+          font-size: 1.2rem;
+          line-height: 2rem;
+          margin: 0.3rem;
+          padding: 0.2rem;
+          background-color: var(--secondary-color);
+          border: 0.5px solid gray;
+          border-radius: 0.5rem;
+        }
+      }
 
+      .project__links {
+        display: flex;
+        flex-direction: column;
         a {
           margin-top: 2rem;
           text-decoration: none;
@@ -55,11 +68,10 @@
           }
         }
       }
-
-      @media screen and (max-width: 813px) {
-        grid-template-columns: 1fr;
-      }
     }
+  }
+  @media screen and (max-width: 813px) {
+    grid-template-columns: 1fr;
   }
 }
 

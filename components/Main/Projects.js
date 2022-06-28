@@ -1,13 +1,6 @@
 import styles from "./Main.module.scss";
 import Image from "next/image";
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaSass,
-  FaJs,
-  FaAngleRight,
-  FaReact,
-} from "react-icons/fa";
+import { FaAngleRight } from "react-icons/fa";
 import { IconContext } from "react-icons";
 
 export default function Projects() {
@@ -16,8 +9,8 @@ export default function Projects() {
       <h2>
         <FaAngleRight /> ls /projects{" "}
       </h2>
-      <div className={styles.projects}>
-        <div className={styles.project__two}>
+      <div className={styles.portfolio}>
+        <div className={styles.project}>
           <h3>To-do App</h3>
           <section>
             <Image
@@ -26,12 +19,14 @@ export default function Projects() {
               width={600}
               height={370}
             />
-            <p>
-              Built in: <br />
-              HTML5 <FaHtml5 />
-              CSS3 Module <FaCss3Alt />
-              JavaScript/React <FaJs /> <FaReact />
-              <br />
+            <div className={styles.project__description}>
+              <p>Simple to-do app with localstorage and search bar</p>
+              <span>JavaScript</span>
+              <span>CSS3 Module</span>
+              <span>Reactjs</span>
+            </div>
+
+            <div className={styles.project__links}>
               <a
                 href="https://luishcr.github.io/to-do-app"
                 target="_blank"
@@ -45,7 +40,6 @@ export default function Projects() {
                   <FaAngleRight />
                 </IconContext.Provider>
               </a>
-              <br />
               <a
                 href="https://github.com/luishcr/to-do-app"
                 target="_blank"
@@ -59,11 +53,12 @@ export default function Projects() {
                   <FaAngleRight />
                 </IconContext.Provider>
               </a>
-            </p>
+            </div>
           </section>
         </div>
-        <div className={styles.project__one}>
-          <h3>JavaScript Challenges from Platzi and HackerRank</h3>
+
+        <div className={styles.project}>
+          <h3>JavaScript Challenges</h3>
           <section>
             <Image
               src="/images/project_1_preview.png"
@@ -71,13 +66,12 @@ export default function Projects() {
               width={600}
               height={370}
             />
-            <p>
-              Built in: <br />
-              HTML5 <FaHtml5 />
-              CSS3/SCSS <FaCss3Alt />
-              <FaSass />
-              JavaScript <FaJs />
-              <br />
+            <div className={styles.project__description}>
+              <p>Web with JavaScript challenges solution and night mode</p>
+              <span>JavaScript</span>
+              <span>SASS</span>
+            </div>
+            <div className={styles.project__links}>
               <a
                 href="https://luishcr.github.io/javascript-challenges"
                 target="_blank"
@@ -91,7 +85,7 @@ export default function Projects() {
                   <FaAngleRight />
                 </IconContext.Provider>
               </a>
-              <br />
+
               <a
                 href="https://github.com/luishcr/javascript-challenges"
                 target="_blank"
@@ -105,7 +99,7 @@ export default function Projects() {
                   <FaAngleRight />
                 </IconContext.Provider>
               </a>
-            </p>
+            </div>
           </section>
         </div>
       </div>

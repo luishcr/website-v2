@@ -1,4 +1,4 @@
-// @import url("https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap");
 
 /*  RESET  */
 *,
@@ -29,7 +29,7 @@ html {
 
 body {
   font-family: "Azeret Mono", monospace, Helvetica;
-  font-size: 2rem;
+  font-size: 1.8rem;
   background-color: var(--secondary-color);
 }
 
@@ -56,7 +56,7 @@ a {
     color: var(--primary-color);
     text-align: center;
     margin-bottom: 2rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .description {
@@ -71,6 +71,37 @@ a {
 
   .section {
     margin-bottom: 10rem;
+  }
+
+  .contact {
+    margin: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+
+    .contact__camp {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 1.5rem;
+      margin-bottom: 1rem;
+      padding: 2rem;
+      border: 0.4rem var(--neutral-color) solid;
+      border-radius: 1rem;
+      background-color: var(--primary-color);
+
+      .contact__icon {
+        color: var(--secondary-color);
+        font-size: 4rem;
+      }
+
+      a {
+        color: var(--light-color);
+      }
+    }
+
+    @media screen and (max-width: 686px) {
+      flex-direction: column;
+    }
   }
 }
 

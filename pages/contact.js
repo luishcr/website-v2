@@ -10,6 +10,14 @@ export default function Contact() {
             <FaAngleRight /> contact
           </h2>
 
+          <div className="contact">
+              <h3>On Linkedin</h3>
+              
+
+          </div>
+
+
+
           <Form />
         </section>
       </div>
