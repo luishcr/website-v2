@@ -14,8 +14,7 @@ export default function Home() {
             <FaAngleRight /> whoami
           </h2>
           <p>
-            My name is Luis Cubillos and I am a self-taught software developer
-            and an electrician.
+            Hi, my name is Luis Cubillos, I am an electrician and a self-taught web developer, specialized in back-end.
           </p>
         </section>
 

@@ -7,8 +7,9 @@ import {
   FaPython,
   FaAngleRight,
 } from "react-icons/fa";
-import { SiMysql, SiNextdotjs } from "react-icons/si";
+import { SiPostgresql, SiNextdotjs, SiMongodb, SiDocker, SiLinux } from "react-icons/si";
 import { IconContext } from "react-icons";
+import {MdSecurity} from "react-icons/md"
 
 export default function Skills() {
   return (
@@ -66,11 +67,43 @@ export default function Skills() {
           </IconContext.Provider>
         </section>
         <section>
-          <h3>MySQL</h3>
+          <h3>SQL</h3>
           <IconContext.Provider
             value={{ className: "main__skills_icons hvr-grow" }}
           >
-            <SiMysql />
+            <SiPostgresql />
+          </IconContext.Provider>
+        </section>
+        <section>
+          <h3>NoSQL</h3>
+          <IconContext.Provider
+            value={{ className: "main__skills_icons hvr-grow" }}
+          >
+            <SiMongodb />
+          </IconContext.Provider>
+        </section>
+        <section>
+          <h3>Docker</h3>
+          <IconContext.Provider
+            value={{ className: "main__skills_icons hvr-grow" }}
+          >
+            <SiDocker />
+          </IconContext.Provider>
+        </section>
+        <section>
+          <h3>Linux</h3>
+          <IconContext.Provider
+            value={{ className: "main__skills_icons hvr-grow" }}
+          >
+            <SiLinux />
+          </IconContext.Provider>
+        </section>
+        <section>
+          <h3>Cybersecurity</h3>
+          <IconContext.Provider
+            value={{ className: "main__skills_icons hvr-grow" }}
+          >
+            <MdSecurity />
           </IconContext.Provider>
         </section>
       </div>
