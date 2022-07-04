@@ -75,7 +75,7 @@ export default function Skills() {
           </IconContext.Provider>
         </section>
         <section>
-          <h3>NoSQL</h3>
+          <h3>MongoDB</h3>
           <IconContext.Provider
             value={{ className: "main__skills_icons hvr-grow" }}
           >

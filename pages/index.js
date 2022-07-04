@@ -25,7 +25,7 @@ export default function Home() {
         <h2>
           <FaAngleRight /> contact
         </h2>
-        <section className="contact">
+        <section className="contact" id="contact">
           <div className="contact__camp">
             <IconContext.Provider value={{ className: "contact__icon" }}>
               <BiMessageDots />

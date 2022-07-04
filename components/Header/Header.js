@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./Header.module.scss";
 import NavMenu from "./NavMenu";
 import NavIcons from "./NavIcons";
@@ -17,6 +16,7 @@ export default function Header() {
         <div className={styles.nav__menu}>
           <div className={styles.nav__mobile}>
             <Logo />
+
             <button
               onClick={() => setshowNav(!showNav)}
               className={styles.nav__toggle}

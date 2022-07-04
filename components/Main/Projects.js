@@ -14,7 +14,7 @@ export default function Projects() {
           <h3>To-do App</h3>
           <section>
             <Image
-              src="/images/project_2_preview.png"
+              src="/images/todo_app_preview.png"
               alt="Project two preview"
               width={600}
               height={370}
@@ -33,7 +33,7 @@ export default function Projects() {
                 rel="noopener noreferrer"
                 className="hvr-icon-forward hvr-icon3"
               >
-                View Web
+                Demo
                 <IconContext.Provider
                   value={{ className: "hvr-icon-forward hvr-icon3" }}
                 >
@@ -46,7 +46,7 @@ export default function Projects() {
                 rel="noopener noreferrer"
                 className="hvr-icon-forward hvr-icon3"
               >
-                View Code
+                Code
                 <IconContext.Provider
                   value={{ className: "hvr-icon-forward hvr-icon3" }}
                 >
@@ -61,7 +61,7 @@ export default function Projects() {
           <h3>JavaScript Challenges</h3>
           <section>
             <Image
-              src="/images/project_1_preview.png"
+              src="/images/javascript_challenges_preview.png"
               alt="Project two preview"
               width={600}
               height={370}
@@ -78,7 +78,7 @@ export default function Projects() {
                 rel="noopener noreferrer"
                 className="hvr-icon-forward hvr-icon3"
               >
-                View Web
+                Demo
                 <IconContext.Provider
                   value={{ className: "hvr-icon-forward hvr-icon3" }}
                 >
@@ -92,7 +92,7 @@ export default function Projects() {
                 rel="noopener noreferrer"
                 className="hvr-icon-forward hvr-icon3"
               >
-                View Code
+                Code
                 <IconContext.Provider
                   value={{ className: "hvr-icon-forward hvr-icon3" }}
                 >
@@ -102,11 +102,12 @@ export default function Projects() {
             </div>
           </section>
         </div>
+
         <div className={styles.project}>
           <h3>Password Generator</h3>
           <section>
             <Image
-              src="/images/project_3_preview.png"
+              src="/images/password_generator_preview.png"
               alt="Project 3 preview"
               width={600}
               height={370}
@@ -124,7 +125,7 @@ export default function Projects() {
                 rel="noopener noreferrer"
                 className="hvr-icon-forward hvr-icon3"
               >
-                View Web
+                Demo
                 <IconContext.Provider
                   value={{ className: "hvr-icon-forward hvr-icon3" }}
                 >
@@ -138,7 +139,7 @@ export default function Projects() {
                 rel="noopener noreferrer"
                 className="hvr-icon-forward hvr-icon3"
               >
-                View Code
+                Code
                 <IconContext.Provider
                   value={{ className: "hvr-icon-forward hvr-icon3" }}
                 >
