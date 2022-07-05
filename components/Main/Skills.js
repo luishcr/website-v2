@@ -9,7 +9,8 @@ import {
 } from "react-icons/fa";
 import { SiPostgresql, SiNextdotjs, SiMongodb, SiDocker, SiLinux } from "react-icons/si";
 import { IconContext } from "react-icons";
-import {MdSecurity} from "react-icons/md"
+import {MdSecurity, MdElectricScooter} from "react-icons/md"
+import {GiElectricalResistance} from "react-icons/gi"
 
 export default function Skills() {
   return (
@@ -104,6 +105,22 @@ export default function Skills() {
             value={{ className: "main__skills_icons hvr-grow" }}
           >
             <MdSecurity />
+          </IconContext.Provider>
+        </section>
+        <section>
+          <h3>Electronics</h3>
+          <IconContext.Provider
+            value={{ className: "main__skills_icons hvr-grow" }}
+          >
+            <GiElectricalResistance />
+          </IconContext.Provider>
+        </section>
+        <section>
+          <h3>PMV</h3>
+          <IconContext.Provider
+            value={{ className: "main__skills_icons hvr-grow" }}
+          >
+            <MdElectricScooter />
           </IconContext.Provider>
         </section>
       </div>
