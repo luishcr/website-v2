@@ -49,7 +49,7 @@ export default function NavIcons() {
       </li>
       <li>
         <a
-          href="https://twitter.com/luishcrDev"
+          href="https://twitter.com/LuisCubiIIos"
           target="_blank"
           rel="noopener noreferrer"
         >
