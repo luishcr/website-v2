@@ -6,7 +6,7 @@ import {
   FaTwitterSquare,
   FaAngleDown,
 } from "react-icons/fa";
-import { SiNotion } from "react-icons/si";
+// import { SiNotion } from "react-icons/si";
 
 export default function NavIcons() {
   return (
@@ -58,7 +58,7 @@ export default function NavIcons() {
           </IconContext.Provider>
         </a>
       </li>
-      <li>
+      {/* <li>
         <a
           href="https://luishcr.notion.site/OnlineCoursesNotes-0e3d900d03dd4cef8580dcac6cc35bc0"
           target="_blank"
@@ -68,7 +68,7 @@ export default function NavIcons() {
             <SiNotion />
           </IconContext.Provider>
         </a>
-      </li>
+      </li> */}
     </ul>
   );
 }
